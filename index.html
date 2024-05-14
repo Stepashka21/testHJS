@@ -1,0 +1,31 @@
+<!doctype html> 
+
+<html> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OnlyTest</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        
+    </head>
+    
+    <body>
+        
+        <div class="field">
+            <canvas id="canvas" width="500" height="300"></canvas>
+            <div class="tools">
+                <button onClick="undo_last()" type="button" class="button">Вернуть на шаг назад</button>
+                <button onClick="clear_canvas()" type="button" class="button">Очистить</button>
+                
+                <button onClick="addText()" type="button" class="button">Текст</button>
+
+                <input type="color" class="color-picker"
+                    onInput="draw_color = this.value">
+                <input id="rangeInput" type="range" min="1" max="100" class="pen-range" 
+                    onInput="updateRangeValue(this.value)">
+                <input id="textInput" type="text" class="text-input">
+            </div>
+    </body>
+    <script src="main.js"></script>
+</html>

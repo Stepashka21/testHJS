@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+}
+.tools {
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
